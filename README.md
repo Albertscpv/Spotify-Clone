@@ -14,3 +14,9 @@ The following project is a clone of the Spotify website created with Astro, a fr
 
 - Astro
 - React, Tailwindcss, Svelte, TypeScript
+
+## Install 
+
+-
+-
+-
