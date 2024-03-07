@@ -5,11 +5,11 @@ const currentHour= currentTime.getHours()
 let Greeting =""
 
 if (currentHour < 12){
-    Greeting = "Buenos dias"
+    Greeting = "Buenos dias, trabajo en proceso"
 } else if ( currentHour < 18){
-    Greeting = "Buenas tardes "
+    Greeting = "Buenas tardes, trabajo en proceso"
 } else {
-    Greeting = "Buenas noches"
+    Greeting = "Buenas noches, trabajo en proceso"
 }
 </script>
 
