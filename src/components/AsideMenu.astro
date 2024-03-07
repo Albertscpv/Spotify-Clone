@@ -1,0 +1,43 @@
+---
+import LibraryIcon from '../icons/LibraryIcon.astro'
+import Home from '../icons/Home.astro'
+import Pause from '../icons/Pause.astro'
+import Play from '../icons/Play.astro'
+import Search from '../icons/Search.astro'
+import Time from '../icons/Time.astro'
+import AsideMenuItem from '../components/AsideMenuItem.astro'
+import { playlists } from '../lib/data.ts'
+import AsideMenuCard from '../components/AsideMenuCard.astro'
+
+
+---
+<nav class="flex flex-col flex-1 gap-1 px-[10px] py-[8px]">
+    <div class="bg-zinc-800 rounded-lg p-2">
+        <ul>
+            <AsideMenuItem>
+                <Home/>
+                Home
+            </AsideMenuItem>
+            <AsideMenuItem>
+                <Search/>
+               Search
+            </AsideMenuItem>
+        </ul>
+    </div>
+    <div class="bg-zinc-800 rounded-lg p-2 flex-1">
+    <ul>
+            <AsideMenuItem>
+                <LibraryIcon/>
+                Tu biblioteca
+            </AsideMenuItem>
+            {
+                playlists.map( playlist => <AsideMenuCard playlist={playlist}  />)
+            }
+         
+    </ul>
+</div>
+</nav>
+
+
+
+
