@@ -13,7 +13,7 @@ const playListSongs = songs.filter((song)=>song.albumId === playlist?.albumId)
 <Layout title="Spotify Clone">
     <div 
         id="playlist-container"
-        class="relative flex flex-col h-full  overflow-x-hidden bg-zinc-900"
+        class="relative flex flex-col h-full  bg-zinc-900"
         transition:name=`main ${id} box`
     >
    <!--Page Header-->
@@ -51,7 +51,7 @@ const playListSongs = songs.filter((song)=>song.albumId === playlist?.albumId)
 
     <div class="relative z-10 px-2 pt-10 ">
         </div>
-        <div class="absolute -z-10 inset-0 bg-gradient-to-t from-zinc-900 via-zinc-800/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-800/80 -z-[1]"></div>
     </div>
 </Layout>
 
