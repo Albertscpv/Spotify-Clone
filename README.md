@@ -1,6 +1,6 @@
 
 # Spotify Clone with Astro
-### The proyect is in process.
+### Work in progress.
 
 The following project is a clone of the Spotify website created with Astro, a frontend framework that offers better performance and faster than other frameworks. This is a tool for modern web applications.
 
